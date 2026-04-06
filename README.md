@@ -21,12 +21,12 @@ Given an image of two shapes, the model predicts a sentence describing the scene
 | Vikunj | Report writing |
 
 ## Responsibilities
-- **Chirag** — sentence templates, vocabulary definition, dataset generation script
-- **Junyao** — image generation script, shape rendering, paired image-label dataset
-- **Yisheng** — tokenisation, vocabulary creation, one-hot/embedding encoding, text label preparation
-- **Nikunj** — CNN implementation, model training, architecture variants, hyperparameter tuning, training logs
-- **Joe** — performance metrics, experiment comparison, results plots/tables, error analysis, LLM comparison
-- **Vikunj & Joe** — group report writing
+- **Chirag** - sentence templates, vocabulary definition, dataset generation script
+- **Junyao** - image generation script, shape rendering, paired image-label dataset
+- **Yisheng** - tokenisation, vocabulary creation, one-hot/embedding encoding, text label preparation
+- **Nikunj** - CNN implementation, model training, architecture variants, hyperparameter tuning, training logs
+- **Joe** - performance metrics, experiment comparison, results plots/tables, error analysis, LLM comparison
+- **Vikunj & Joe** - group report writing
 
 ## Repo Structure
 | Folder | Contents |
