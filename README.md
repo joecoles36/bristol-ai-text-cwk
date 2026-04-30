@@ -8,7 +8,7 @@ MSc Data Science group coursework, University of Bristol, 2026.
 ## Task
 Build a neural network to describe simple pictures of shape arrangements.
 Given an image of two shapes, the model predicts a sentence describing the scene
-(e.g. "a large blue sphere is above a small red cube").
+(e.g., "a large blue sphere is above a small red cube").
 
 ## Team
 | Person | Role |
@@ -18,7 +18,7 @@ Given an image of two shapes, the model predicts a sentence describing the scene
 | Yisheng | Text representation & preprocessing |
 | Nikunj | CNN model development, architecture experimentation & hyperparameter tuning |
 | Joe | Evaluation, experiments & LLM comparison |
-| Vikunj | Report writing |
+| Nikunj | Report writing |
 
 ## Responsibilities
 - **Chirag** - sentence templates, vocabulary definition, dataset generation script
@@ -26,7 +26,7 @@ Given an image of two shapes, the model predicts a sentence describing the scene
 - **Yisheng** - tokenisation, vocabulary creation, one-hot/embedding encoding, text label preparation
 - **Nikunj** - CNN implementation, model training, architecture variants, hyperparameter tuning, training logs
 - **Joe** - performance metrics, experiment comparison, results plots/tables, error analysis, LLM comparison
-- **Vikunj & Joe** - group report writing
+- **Nikunj & Joe** - group report writing
 
 ## Repo Structure
 | Folder | Contents |
