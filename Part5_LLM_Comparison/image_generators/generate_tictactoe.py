@@ -1,46 +1,75 @@
 import matplotlib.pyplot as plt
 
-sizes = {
-    'small': 80,
-    'medium': 150,
-    'large': 250
-}
 
-def draw_number(number, colour, size, bg, filename):
-    fig, ax = plt.subplots(figsize=(4,4))
+def parse_board(board_state):
+    """Convert board string into a list of cells"""
+    return board_state.split('|')
 
-    fig.patch.set_facecolor(bg)
-    ax.set_facecolor(bg)
 
-    ax.text(
-        0.5, 0.5, str(number),
-        fontsize=sizes[size],
-        color=colour,
-        ha='center', va='center',
-        fontweight='bold'
-    )
+def draw_board(board_state):
+    """Draw a tic tac toe board from a board state string"""
+    board = parse_board(board_state)
 
-    ax.set_xlim(0, 1)
-    ax.set_ylim(0, 1)
+    fig, ax = plt.subplots(figsize=(4, 4))
+
+    # draw grid
+    for i in range(1, 3):
+        ax.plot([0, 3], [i, i], color='black')
+        ax.plot([i, i], [0, 3], color='black')
+
+    # place symbols
+    for i, cell in enumerate(board):
+        row = 2 - (i // 3)
+        col = i % 3
+
+        if cell == 'X':
+            ax.text(
+                col + 0.5, row + 0.5, 'X',
+                fontsize=40, ha='center', va='center', color='red'
+            )
+        elif cell == 'O':
+            ax.text(
+                col + 0.5, row + 0.5, 'O',
+                fontsize=40, ha='center', va='center', color='blue'
+            )
+
+    ax.set_xlim(0, 3)
+    ax.set_ylim(0, 3)
     ax.axis('off')
 
-    fig.savefig(filename, bbox_inches='tight', pad_inches=0)
-    plt.close(fig)
+    return fig
 
 
-# exact test set matching previous tests
-test_cases = [
-    (1173, 'orange', 'small', 'lightgrey'),
-    (5567, 'pink', 'large', 'black'),
-    (8582, 'yellow', 'small', 'darkblue'),
-    (2, 'brown', 'medium', 'lightgrey'),
-    (49, 'brown', 'small', 'darkblue'),
-    (6, 'blue', 'medium', 'lightgrey'),
-    (307, 'brown', 'medium', 'lightgrey'),
-    (30, 'blue', 'large', 'black')
-]
+def save_single_board():
+    """Generate and save one test board"""
+    board = "X|_|_|_|X|_|_|_|O"
 
-for i, (num, col, size, bg) in enumerate(test_cases):
-    draw_number(num, col, size, bg, f"num_{i}.png")
+    fig = draw_board(board)
+    fig.savefig("board.png", bbox_inches='tight')
 
-print("Generated number images")
+    print("Saved board.png")
+    plt.show()
+
+
+def save_multiple_boards():
+    """Generate and save multiple boards for testing"""
+    boards = [
+        "X|_|_|_|X|_|_|_|O",
+        "X|O|_|_|X|_|_|_|O",
+        "_|X|_|O|_|_|_|_|X",
+        "X|X|X|_|_|_|_|_|_",
+        "_|_|_|O|O|O|_|_|_",
+        "X|_|_|_|O|_|_|_|X",
+        "_|_|O|_|X|_|O|_|_",
+        "_|X|_|_|_|_|_|O|_"
+    ]
+
+    for i, board in enumerate(boards):
+        fig = draw_board(board)
+        fig.savefig(f"ttt_{i}.png", bbox_inches='tight')
+
+    print(f"Saved {len(boards)} boards")
+
+if __name__ == "__main__":
+    save_single_board()
+    save_multiple_boards()
