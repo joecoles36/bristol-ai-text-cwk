@@ -1,9 +1,15 @@
-image_id,ground_truth,gemini_response,x_correct,o_correct,position_correct,all_correct
-ttt_0.png,X center O bottom-right,X center O bottom-right,1,1,1,1
-ttt_1.png,X top-left center O top-center bottom-right,X top-left center O top-center bottom-right,1,1,1,1
-ttt_2.png,X top-center bottom-right O middle-left,X top-center bottom-right O middle-left,1,1,1,1
-ttt_3.png,X top row,X top row,1,1,1,1
-ttt_4.png,O middle row,O middle row,1,1,1,1
-ttt_5.png,X top-left bottom-right O center,X top-left bottom-right O center,1,1,1,1
-ttt_6.png,X center O top-right bottom-left,X center O top-right bottom-left,1,1,1,1
-ttt_7.png,X top-center O bottom-center,X top-center O bottom-center,1,1,1,1
+Model,Domain,All_Fields,Colour,Shape/Number,Position,Background
+SmallCNN,Shapes,0.52,0.85,0.60,0.70,0.80
+DeepCNN,Shapes,0.59,0.88,0.65,0.75,0.82
+ResNet,Shapes,0.67,0.92,0.72,0.80,0.85
+Gemini,Shapes,0.55,0.88,0.95,0.92,0.85
+
+SmallCNN,Numbers,0.18,0.60,0.40,NA,0.70
+DeepCNN,Numbers,0.25,0.65,0.50,NA,0.72
+ResNet,Numbers,0.36,0.75,0.60,NA,0.78
+Gemini,Numbers,0.70,0.80,1.00,NA,0.90
+
+SmallCNN,TicTacToe,0.01,NA,0.20,0.30,NA
+DeepCNN,TicTacToe,0.03,NA,0.25,0.40,NA
+ResNet,TicTacToe,0.05,NA,0.30,0.50,NA
+Gemini,TicTacToe,1.00,NA,1.00,1.00,NA
