@@ -1,0 +1,9 @@
+image_id,ground_truth,gemini_response,number_correct,colour_correct,size_correct,background_correct
+num_0.png,small orange number 1173,large orange number 1173,1,1,0,1
+num_1.png,large pink number 5567,very large pink number 5567,1,1,1,1
+num_2.png,small yellow number 8582,large yellow number 8582,1,1,0,1
+num_3.png,medium brown number 2,large dark red number 2,1,0,0,1
+num_4.png,small brown number 49,large red number 49,1,0,0,1
+num_5.png,medium blue number 6,large blue number 6,1,1,0,1
+num_6.png,medium brown number 307,large dark red number 307,1,0,0,1
+num_7.png,large blue number 30,large blue number 30,1,1,1,1
