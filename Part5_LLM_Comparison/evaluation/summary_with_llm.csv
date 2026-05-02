@@ -1,0 +1,9 @@
+image_id,ground_truth,gemini_response,x_correct,o_correct,position_correct,all_correct
+ttt_0.png,X center O bottom-right,X center O bottom-right,1,1,1,1
+ttt_1.png,X top-left center O top-center bottom-right,X top-left center O top-center bottom-right,1,1,1,1
+ttt_2.png,X top-center bottom-right O middle-left,X top-center bottom-right O middle-left,1,1,1,1
+ttt_3.png,X top row,X top row,1,1,1,1
+ttt_4.png,O middle row,O middle row,1,1,1,1
+ttt_5.png,X top-left bottom-right O center,X top-left bottom-right O center,1,1,1,1
+ttt_6.png,X center O top-right bottom-left,X center O top-right bottom-left,1,1,1,1
+ttt_7.png,X top-center O bottom-center,X top-center O bottom-center,1,1,1,1
