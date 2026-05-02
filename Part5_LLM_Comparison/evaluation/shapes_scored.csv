@@ -1,0 +1,11 @@
+image_id,ground_truth,gemini_response,shape_correct,colour_correct,position_correct,background_correct
+test.png,orange square above blue circle,orange square above blue circle,1,1,1,1
+test1.png,green triangle left of grey square,green triangle left of grey square,1,1,1,1
+test2.png,blue triangle centre,grey triangle inside blue triangle,1,1,0,1
+test3.png,red triangle inside grey square,red triangle inside grey square,1,1,1,1
+test4.png,orange square above yellow circle,orange square above yellow circle,1,1,1,1
+test5.png,pink circle overlapping orange triangle,pink circle overlaps orange triangle,1,1,1,1
+test6.png,red circle left of green circle,red circle left of green circle,1,1,1,1
+test7.png,yellow square inside green square,yellow circle inside purple square,0,1,0,1
+test8.png,yellow hexagon above grey circle,yellow hexagon above grey circle,1,1,1,1
+test9.png,pink square left of pink circle,pink square left of pink circle,1,1,1,1
