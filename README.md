@@ -18,7 +18,7 @@ Given an image of two shapes, the model predicts a sentence describing the scene
 | Yisheng | Text representation & preprocessing |
 | Nikunj | CNN model development, architecture experimentation & hyperparameter tuning |
 | Joe | Evaluation, experiments & LLM comparison |
-| Nikunj | Report writing |
+| Team | Report writing |
 
 ## Responsibilities
 - **Chirag** - sentence templates, vocabulary definition, dataset generation script
@@ -26,7 +26,7 @@ Given an image of two shapes, the model predicts a sentence describing the scene
 - **Yisheng** - tokenisation, vocabulary creation, one-hot/embedding encoding, text label preparation
 - **Nikunj** - CNN implementation, model training, architecture variants, hyperparameter tuning, training logs
 - **Joe** - performance metrics, experiment comparison, results plots/tables, error analysis, LLM comparison
-- **Nikunj & Joe** - group report writing
+- **Team** - group report writing
 
 ## Repo Structure
 | Folder | Contents |
